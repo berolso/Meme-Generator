@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Memory Game!</title>
+    <link rel="stylesheet" href="app.css" />
+    <link
+      rel="stylesheet"
+      href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div id="formContainer" class="container">
+      <form id="form" class="form-group">
+        <h2>Meme Generator</h2>
+        <div class="form-group">
+          <label for="url">Img url</label>
+          <input
+            id="url"
+            type="text"
+            class="form-control"
+            placeholder="https://..."
+            required
+            autofocus
+            autocomplete="on"
+            value="https://images.unsplash.com/photo-1506777390528-af8560003b14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+          />
+        </div>
+        <div class="form-group">
+          <label for="upper">Meme Text</label>
+          <input
+            id="upper"
+            type="text"
+            class="form-control"
+            placeholder="Text on top of Meme"
+            required
+            autofocus
+            autocomplete="on"
+            value="IT SHOULD BE FUNCTIONAL!"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            id="lower"
+            type="text"
+            class="form-control"
+            placeholder="Text on bottom of Meme"
+            required
+            autofocus
+            autocomplete="on"
+            value="..BUT ALSO LOOK NICE"
+          />
+        </div>
+        <input
+          id="submit"
+          type="submit"
+          class="btn btn-lg btn-primary btn-block"
+          value="Generate"
+        />
+      </form>
+    </div>
+    <div id="display">
+      <!-- for testing format -->
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

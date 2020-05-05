@@ -1,0 +1,80 @@
+#display {
+  /* border: solid 5px red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.meme {
+  position: relative;
+  /* border: solid 5px blue; */
+  display: flex;
+  flex: 40%;
+  max-width: 50%;
+  justify-content: center;
+  margin: .5em;
+  transition: .5s ease;
+}
+
+.upper {
+  color: rgb(243, 243, 243);
+  /* border: solid 5px green; */
+  position: absolute;
+  padding: 5%;
+  overflow-wrap: break-word;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px black;
+  font-size: 3.5vw;
+}
+
+.image {
+  /* border: solid 5px gray; */
+  width: 100%;
+  vertical-align: middle;
+}
+
+.lower {
+  color: rgb(243, 243, 243);
+  /* border: solid 5px yellowgreen; */
+  position: absolute;
+  bottom: 5%;
+  padding: 5%;
+  overflow-wrap: break-word;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px black;
+  font-size: 4vw;
+}
+
+.delete {
+  /* border: solid 5px gray; */
+  position: absolute;
+  width: 100%;
+  top: 20%;
+  vertical-align: middle;
+  opacity: 0;
+}
+
+.meme:hover .image {
+  opacity: 0.3;
+  transition: .5s ease;
+}
+
+.meme:hover .upper {
+  opacity: 0.3;
+  transition: .5s ease;
+}
+
+.meme:hover .lower {
+  opacity: 0.3;
+  transition: .5s ease;
+}
+
+.meme:hover .delete {
+  opacity: .7;
+  transition: .5s ease;
+}
